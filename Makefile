@@ -1,4 +1,5 @@
-obj-m += hello-2.o
+# obj-m += hello-2.o
+obj-m += minifs.o
 
 PWD := $(CURDIR)
 
