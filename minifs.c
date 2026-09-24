@@ -23,6 +23,8 @@ static int __init minifs_init(void)
         // from fs.h
         // use registered fs?
         //register_filesystem(&file_system_type); // pass address 
+
+        // add to global list of available filesystems
         int ret = register_filesystem(&minifs_type);
         if (ret != 0){
                 // error and abort
